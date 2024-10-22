@@ -1,0 +1,193 @@
+* {
+	margin: 1px;
+}
+:root {
+	/* just storing these here don't mind me */
+	--stroke-color: red;
+	--stroke-width: 1px;
+}
+#mainContent {
+	margin: 5%;
+}
+#strokeNum {
+	width: 3em;
+}
+#strokeOpacity {
+	width: 4em;
+}
+.colorInput { /* this shit is gonna look ugly on firefox but whatever, i'll do --mozilla tags later (never) */
+	border: 8px;
+	background: none;
+	padding: 0px;
+}
+body {
+	background-color: #192933;
+	display: table-cell;
+	vertical-align: middle;
+}
+button {
+	font-size: 20px;
+	padding: 6px;
+}
+custom-stroke {
+	font-size: 20px;
+	-webkit-text-stroke: 1px var(--stroke-color);
+}
+div {
+	text-align: center;
+}
+h1 {
+	color: #DDD;
+	font-family: Arial;
+}
+hr {
+	height: 16px;
+	width: 50%;
+	margin: auto;
+	color: #000;
+	border: solid black;
+	background-color: #000;
+	border-radius: 16px;
+}
+html, body {
+	height: 100%;
+}
+html {
+	display: table;
+	margin: auto;
+}
+input {
+	font-size: 16px;
+	padding: 6px;
+}
+input[type='color'] {
+	vertical-align: middle;
+	position: relative;
+	top: -2px; /* hacky workaround to actually learning css */
+}
+label {
+	color: #DDD;
+	font-family: Arial;
+	font-size: 20px;
+}
+p {
+	color: #DDD;
+	font-family: Arial;
+	font-size: 20px;
+}
+p2 {
+	color: #E5E5E6;
+	font-size: 20px;
+	font-family: Arimo;
+}
+previewtext {
+	font-family: Arimo;
+}
+select {
+	text-align-last: center;
+	position: relative;
+	top: -1px; /* hacky workaround to actually learning css */
+}
+textarea {
+	resize: none;
+}
+/* this sucks, but it forces all fonts to be loaded... */
+@font-face {
+	font-family: 'Arcade';
+	src: url('./fonts/Arcade.ttf');
+}
+
+@font-face {
+	font-family: 'IndieFlower';
+	src: url('./fonts/IndieFlower.ttf');
+}
+
+@font-face {
+	font-family: 'JosefinSans';
+	src: url('./fonts/JosefinSans.ttf');
+}
+
+@font-face {
+	font-family: 'Jura';
+	src: url('./fonts/Jura.ttf');
+}
+
+@font-face {
+	font-family: 'Kalam';
+	src: url('./fonts/Kalam.ttf');
+}
+
+@font-face {
+	font-family: 'LuckiestGuy';
+	src: url('./fonts/LuckiestGuy.ttf');
+}
+
+@font-face {
+	font-family: 'Michroma';
+	src: url('./fonts/Michroma.ttf');
+}
+
+@font-face {
+	font-family: 'Nunito';
+	src: url('./fonts/Nunito.ttf');
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('./fonts/Oswald.ttf');
+}
+
+@font-face {
+	font-family: 'PatrickHand';
+	src: url('./fonts/PatrickHand.ttf');
+}
+
+@font-face {
+	font-family: 'PermanentMarker';
+	src: url('./fonts/PermanentMarker.ttf');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('./fonts/Roboto.ttf');
+}
+
+@font-face {
+	font-family: 'RobotoCondensed';
+	src: url('./fonts/RobotoCondensed.ttf');
+}
+
+@font-face {
+	font-family: 'RobotoMono';
+	src: url('./fonts/RobotoMono.ttf');
+}
+
+@font-face {
+	font-family: 'Sarpanch';
+	src: url('./fonts/Sarpanch.ttf');
+}
+
+@font-face {
+	font-family: 'SourceSans';
+	src: url('./fonts/SourceSans.ttf');
+}
+
+@font-face {
+	font-family: 'SpecialElite';
+	src: url('./fonts/SpecialElite.ttf');
+}
+
+@font-face {
+	font-family: 'TitilliumWeb';
+	src: url('./fonts/TitilliumWeb.ttf');
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('./fonts/Ubuntu.ttf');
+}
+
+@font-face {
+	font-family: 'Zekton';
+	src: url('./fonts/Zekton.ttf');
+}

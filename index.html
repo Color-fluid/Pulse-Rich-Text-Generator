@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RTG</title>
+		<link rel="stylesheet" href="index.css">
+		<!-- so for some reason, while these imports are in the index.css, these fonts wont load properly. someone who's actually good at webdev, please tell me why that is -->
+		<style>
+			@import url('https://fonts.cdnfonts.com/css/roman-antique');
+			@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Denk+One&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap'); /* fantasy */
+			@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap');
+		</style>
+		<script src="index.js"></script>
+		<meta content="peintetoile's website!!!" property="og:title" />
+		<meta content="the website where you make richtext for pulse!!!" property="og:description" />
+		<meta content="https://rtg.colorfluids.space" property="og:url" />
+		<meta content="https://media.tenor.com/FBjJTyS789wAAAAi/noob-roblox.gif" property="og:image" />
+		<meta content="#EAEAEA" data-react-helmet="true" name="theme-color" />
+	</head>
+	<body>
+		<!--
+		hi welcome to my first actual real self coded HTML project that doesn't rely on anything else
+		-->
+		<!--
+		the code sucks and will continue to suck as i work on it, but i don't care
+		-->
+		<!--
+		made by peintetoile
+		-->
+		<div id="mainContent">
+			<div id="header">
+				<h1>Rich Text Generator intended for Pulse</h1><br>
+				<p>it's a bit of a piece of junk, i'm going to rewrite all of this at some point. i'm sorry if the design is clunky, this was mainly a passion project.<br>i'll be updating it soonTM. it's also kinda intended for PC.</p>
+				<noscript><h1>Hey, I've noticed that you don't have JavaScript enabled. The generator uses JavaScript, so please enable it. There is no tracking here.</h1></noscript>
+			</div><br><hr><br>
+			<div id="fontManagement">
+				<h1>Font Settings</h1>
+				<p>Set these to use with the "Apply Font Color", "Apply Font Face", and "Apply Stroke Color".</p><br>
+				<label for="fontFace">Font Face: </label>
+				<select name="fontFace" id="fontFace">
+					<option value="amatic">Amatic SC</option>
+					<option value="antique">Antique</option>
+					<option value="arcade">Arcade</option>
+					<option value="arimo" selected>Arimo</option> <!-- did you know that roblox phased out arial??? what the fuck??? -->
+					<option value="bangers">Bangers</option>
+					<option value="bodoni">Bodoni</option>
+					<option value="cartoon">Cartoon</option>
+					<option value="code">Code</option>
+					<option value="creepster">Creepster</option>
+					<option value="denkOne">Denk One</option>
+					<option value="fantasy">Fantasy</option>
+					<option value="fondamento">Fondamento</option>
+					<option value="fredokaOne">Fredoka One</option>
+					<option value="garamond">Garamond</option>
+					<option value="grenzeGotisch">Grenze Gotisch</option>
+					<option value="highway">Highway</option>
+					<option value="indieFlower">Indie Flower</option>
+					<option value="josefinSans">Josefin Sans</option>
+					<option value="jura">Jura</option>
+					<option value="kalam">Kalam</option>
+					<option value="Legacy">Legacy</option>
+					<option value="luckiestGuy">Luckiest Guy</option>
+					<option value="merriweather">Merriweather</option>
+					<option value="michroma">Michroma</option>
+					<option value="nunito">Nunito</option>
+					<option value="oswald">Oswald</option>
+					<option value="patrickHand">Patrick Hand</option>
+					<option value="permanentMarker">Permanent Marker</option>
+					<option value="roboto">Roboto</option>
+					<option value="robotoCondensed">Roboto Condensed</option>
+					<option value="robotoMono">Roboto Mono</option>
+					<option value="sarpanch">Sarpanch</option>
+					<option value="scifi">SciFi</option>
+					<option value="sourceSans">Source Sans</option>
+					<option value="specialElite">Special Elite</option>
+					<option value="titilliumWeb">Titillium Web</option>
+					<option value="ubuntu">Ubuntu</option>
+				</select><br><br>
+				<label for="colorValue">Font Color:</label>
+				<input class="colorInput" type="color" id="colorValue" name="colorValue" value="#fffff1"><br>
+				<label for="strokeColorValue">Stroke Color: </label>
+				<input class="colorInput" type="color" id="strokeColorValue" name="strokeColorValue" value="#fffff1"/><br><br>
+				<p>These checkmarks will apply the following options upon clicking "Apply Checked Font Options to Selection".</p>
+				<label for="textColorCheck">Text Color: </label>
+				<input type="checkbox" id="textColorCheck" name="textColorCheck"><p></p>
+				<label for="textFaceCheck">Font Face: </label>
+				<input type="checkbox" id="textFaceCheck" name="textFaceCheck"><p></p>
+				<label for="strokeCheck">Text Stroke: </label> <!-- i really could use a stroke check after writing all of this -->
+				<input type="checkbox" id="strokeCheck" name="strokeCheck">
+			</div><br><hr><br>
+			<div>
+				<div id="inputField">
+					<h1>Input Field</h1>
+					<label for="inputText">Type stuff in here. The character limit for Pulse is 200, and Rich Text tags do use characters (&lti&gt&lt/i&gt, for example, uses 7 characters).<br>You can also press Enter to insert a New Line character. Pulse supports 2 lines in the same message.</label><br>
+					<textarea id="inputText" name="inputText" rows=2 cols=130></textarea><br>
+					<p id="charsLeft">You have 200 characters remaining.</p>
+					<p id="warning"></p>
+				</div><br>
+				<div id="thePreview">
+					<h1>Text Preview</h1>
+					<p2 id="previewText" face="Arial">[YourNameHere]:</p2>
+				</div>
+			</div><br><hr><br>
+			<div id="insertButtons"> <!-- ignore the fact that these are still labeled "insert", that's just another part of the technical debt :) -->
+				<h1>Apply Tags</h1>
+				<p>Note: When applying the tag to a selection, make sure you properly select all the text that you want encased.<br>If you're using a Chromium (Chrome, Edge, Opera GX, etc) browser, keep your cursor WITHIN the text field.<br>That bug is beyond me. That's just how Chromium based browsers work. It works just fine on Firefox.</p>
+				<br>
+				<button type="button" id="insertItalics" onclick="tagEncase('Italics')">Apply Italics to Selection</button>
+				<button type="button" id="insertStrikethrough" onclick="tagEncase('ST')">Apply Strikethrough to Selection</button>
+				<button type="button" id="insertUnderline" onclick="tagEncase('UL')">Apply Underline to Selection</button><br>
+			</div>
+			<div id="insertFontSettings">
+				<button type="button" id="insertColor" onclick="encaseColorTag()">Apply Font Color to Selection</button>
+				<button type="button" id="insertFontFace" onclick="encaseFontFace()">Apply Font Face to Selection</button>
+				<button type="button" id="insertStroke" onclick="encaseStroke()">Apply Stroke Color to Selection</button>
+				<button type="button" id="insertSelectedFontOptions" onclick="encaseAllOptions()">Apply Checked Font Options to Selection</button>
+			</div><br>
+		</div>
+	</body>
+</html>
